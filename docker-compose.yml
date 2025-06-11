@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  postgres:
+    container_name: home_budget_app
+    image: postgres:13.4
+    shm_size: 1g
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5432:5432
