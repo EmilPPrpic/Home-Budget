@@ -11,7 +11,6 @@ class Category(Base):
     description = Column(String, nullable=True)
     user_id = Column(Integer, ForeignKey('users.id', ondelete='CASCADE'))
 
-    # category nam e should be unique per user
     __table_args__ = (
         UniqueConstraint('name', 'user_id', name='unique_category_per_user'),
     )

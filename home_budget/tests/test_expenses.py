@@ -1,6 +1,5 @@
 import pytest
 from fastapi.testclient import TestClient
-from datetime import date
 
 from home_budget.main import app
 

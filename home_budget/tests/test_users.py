@@ -48,7 +48,7 @@ def test_register_duplicate_user():
         "username": username,
         "password": password
     })
-    response = client.post(base_url +"/register", json={
+    response = client.post(base_url + "/register", json={
         "username": username,
         "password": "newpassword"
     })
