@@ -8,7 +8,7 @@ from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
 from .models import User
-from db import get_session
+from home_budget.db import get_session
 
 SECRET_KEY = "secret-key"
 ALGORITHM = "HS256"

@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 
-from db import Base
+from home_budget.db import Base
 
 
 class User(Base):
@@ -9,3 +9,4 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     username = Column(String, unique=True, index=True)
     password = Column(String)
+    balance = Column(Integer, default=1000)

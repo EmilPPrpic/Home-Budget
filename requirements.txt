@@ -3,3 +3,6 @@ SQLAlchemy~=2.0.41
 uvicorn~=0.34.2
 pyjwt
 python-multipart
+psycopg2-binary
+alembic
+httpx
